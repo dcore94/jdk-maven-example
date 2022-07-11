@@ -5,7 +5,7 @@ import java.io.IOException;  // Import the IOException class to handle errors
 
 public class HelloWorld {
 
-	protected static writeFiles(){
+	protected static void writeFiles(){
 		try {
       			FileWriter myWriter = new FileWriter("file.txt");
       			myWriter.write("Hello world!");
