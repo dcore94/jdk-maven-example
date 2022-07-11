@@ -7,7 +7,7 @@ public class HelloWorld {
 
 	protected static void writeFiles(){
 		try {
-      			FileWriter myWriter = new FileWriter("file.txt");
+      			FileWriter myWriter = new FileWriter("/tmp/file.txt");
       			myWriter.write("Hello world!");
       			myWriter.close();
     		} catch (IOException e) {
@@ -15,7 +15,7 @@ public class HelloWorld {
       			e.printStackTrace();
     		}
 		try {
-                        FileWriter myWriter = new FileWriter("file.xml");
+                        FileWriter myWriter = new FileWriter("/tmp/file.xml");
                         myWriter.write("<text>Hello world!</text>");
                         myWriter.close();
                 } catch (IOException e) {
@@ -23,7 +23,7 @@ public class HelloWorld {
                         e.printStackTrace();
                 }
 		try {
-                        FileWriter myWriter = new FileWriter("file.json");
+                        FileWriter myWriter = new FileWriter("/tmp/file.json");
                         myWriter.write("{ \"text\": \"Hello world!\"}");
                         myWriter.close();
                 } catch (IOException e) {
@@ -31,7 +31,7 @@ public class HelloWorld {
                         e.printStackTrace();
                 }
 		try {
-                        FileWriter myWriter = new FileWriter("file.csv");
+                        FileWriter myWriter = new FileWriter("/tmp/file.csv");
                         myWriter.write("row,content\n");
 			myWriter.write("1,Hello world!\n");
                         myWriter.close();
