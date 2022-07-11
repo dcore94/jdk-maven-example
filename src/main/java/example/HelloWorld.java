@@ -32,8 +32,8 @@ public class HelloWorld {
                 }
 		try {
                         FileWriter myWriter = new FileWriter("file.csv");
-                        myWriter.writeln("row,content");
-			myWriter.writeln("1,Hello world!");
+                        myWriter.write("row,content\n");
+			myWriter.write("1,Hello world!\n");
                         myWriter.close();
                 } catch (IOException e) {
                         System.err.println("An error occurred.");
